@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://github.com/I-Atlas/To-Do">
-    <img src="https://imgur.com/cwY9caZ.png" width="300" alt="To-Do">
+    <img src="https://imgur.com/cwY9caZ.png" width="600" alt="To-Do">
     </a>
     <br>
     <br>
