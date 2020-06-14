@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux'
 import Header from './Components/Todo/Header'
 import AddTodo from './Components/Todo/AddTodo'
 import List from './Components/Todo/List'
-
-import { Provider } from 'react-redux'
-
 import store from './Components/Actions/Store'
 
 class App extends Component {

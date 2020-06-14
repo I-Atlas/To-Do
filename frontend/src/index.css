@@ -19,8 +19,8 @@ code {
 
 .app {
 	margin: 0 auto;
-	width: 600px;
-	min-height: 300px;
+  width: 600px;
+	min-height: 20%;
 	margin-top: 70px;
 }
 /* Remove margins and padding from the list */
@@ -63,7 +63,7 @@ ul li.checked {
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* Add a "checked" mark */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -105,4 +105,23 @@ ul li.checked::before {
 
 .todo-text {
   text-align: left;
+}
+
+@media only screen and (max-width: 765px) {
+  .header {
+    width: 100%;
+  }
+
+  .app {
+    width: auto;
+    margin-top: 0%;
+  }
+
+  .list{
+    width: 100%;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
 }

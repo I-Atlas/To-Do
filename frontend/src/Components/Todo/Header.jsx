@@ -1,8 +1,5 @@
 import React from 'react'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography'
+import { Card, CardActionArea, CardContent, Typography} from '@material-ui/core'
 
 class Header extends React.Component {
     render () {
@@ -11,7 +8,7 @@ class Header extends React.Component {
                 <CardActionArea>
                     <CardContent>
                         <Typography variant="h4" component="h5">
-                            <img className="card-module" src="https://imgur.com/XNfZS5N.png"/>
+                            <img className="card-module" src="https://imgur.com/XNfZS5N.png" alt="To-Do List"/>
                         </Typography>
                     </CardContent>
                 </CardActionArea>
