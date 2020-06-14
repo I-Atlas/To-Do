@@ -29,7 +29,7 @@ class Todo extends React.Component {
         return (
             <li className={todo.isCompleted ? 'checked' :  ''}>
                 <span onClick={this.handleComplete}><Button className="todo-text">{todo.text}</Button></span>
-                <span onClick={this.handleDelete} className="close"><IconButton color="secondary"> <i className="material-icons">delete</i></IconButton></span>
+                <span onClick={this.handleDelete} className="delete"><IconButton color="secondary"> <i className="material-icons">delete</i></IconButton></span>
             </li>
         )
     }
