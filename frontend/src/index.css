@@ -78,11 +78,11 @@ ul li.checked::before {
 }
 
 /* Style the close button */
-.close {
+.delete {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 2% 2% 2% 2%;
+  padding: 1% 2%;
 }
 
 .header {
