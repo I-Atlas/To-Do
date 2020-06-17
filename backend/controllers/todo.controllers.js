@@ -1,5 +1,14 @@
 const Todo = require('../models/todo.models')
 
+exports.fetchAll = async (_req, res) => {
+    try {
+        const todos = await Todo.find()
+        return res.json(todos)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 exports.create = async (req, res) => {
     const { text } = req.body
     try {
@@ -11,29 +20,10 @@ exports.create = async (req, res) => {
     }
 }
 
-exports.getAll = async (_req, res) => {
-    try {
-        const todos = await Todo.find()
-        return res.json(todos)
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 exports.delete = async (req, res) => {
     try {
         const todo = await Todo.findById(req.params.todoId)
         await todo.remove()
-        return res.json({ todoId: req.params.todoId })
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-exports.update = async (req, res) => {
-    try {
-        const todo = await Todo.findById(req.params.todoId)
-        await todo.update().save()
         return res.json({ todoId: req.params.todoId })
     } catch (error) {
         console.log(error)
