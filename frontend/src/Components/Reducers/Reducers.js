@@ -26,12 +26,6 @@ export const reducers = (state = initialState, action) => {
                 todos: [...state.todos, action.payload]
             }
 
-        // case ACTION_TYPES.UPDATE:
-        //     return {
-        //         ...state,
-        //         todos: state.todos.map(todo => todo._id === action.payload._id ? action.payload : todo)
-        //     }
-
         case ACTION_TYPES.DELETE:
             return {
                 ...state,
