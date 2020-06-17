@@ -8,17 +8,12 @@ class Todo extends React.Component {
         super(props)
         
         this.handleDelete = this.handleDelete.bind(this)
-        // this.handleUpdate = this.handleUpdate.bind(this)
         this.handleComplete = this.handleComplete.bind(this)
     }
 
     handleDelete () {
         this.props.deleteTodo(this.props.todo._id)
     }
-
-    // handleUpdate () {
-    //     this.props.updateTodo(this.props.todo._id)
-    // }
 
     handleComplete () {
         this.props.completeTodo(this.props.todo._id)
