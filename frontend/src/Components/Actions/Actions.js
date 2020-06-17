@@ -2,7 +2,6 @@ import axios from 'axios'
 
 export const ACTION_TYPES = {
     CREATE: 'CREATE',
-    // UPDATE: 'UPDATE',
     DELETE: 'DELETE',
     FETCH_ALL: 'FETCH_ALL',
     LOAD_ALL: 'LOAD_ALL',
@@ -38,15 +37,6 @@ export const deleteTodo = (todoId) => (dispatch) => {
     }))
     .catch(error => console.log(error))
 }
-
-// export const updateTodo = (todoId) => (dispatch) => {
-//     axios.post(`/todos/${todoId}`)
-//     .then(res => dispatch({
-//         type: ACTION_TYPES.UPDATE,
-//         payload: res.data.todoId
-//     }))
-//     .catch(error => console.log(error))
-// }
 
 export const completeTodo = (todoId) => (dispatch) => {
     axios.post(`/todos/${todoId}/complete`)
